@@ -18,11 +18,10 @@
               green: "#43A548",
               bgDark: "#202C36",
               white: "white",
-              bgGreen:'#E5F6E6',
-              bg:"#F7F8F8",
-              white:'white',
-              black:'#2C2B35',
-              
+              bgGreen: "#E5F6E6",
+              bg: "#F7F8F8",
+              white: "white",
+              black: "#2C2B35",
             },
             backgroundImage: {
               "linear-green": "linear-gradient(to right, #2B3844, #202C36)",
@@ -34,34 +33,382 @@
     <link rel="stylesheet" href="./style.css" />
   </head>
 
-  <body>
-    <header>
-      <div class="my-container overflow-hidden  px-5 md:px-3 lg:px-0 h-20 flex items-center justify-between gap-10">
+  <body class="bg-bg">
+    <header class="bg-white">
+      <div
+        class="my-container overflow-hidden px-5 md:px-3 lg:px-0 h-20 flex items-center justify-between"
+      >
         <a href="./index.html">
-          <img class=" lg:w-[300px] md:w-[200px] w-[133px]" src="./imags/logo.svg" alt="1С-Товары logo" />
+          <img
+            class="lg:w-[300px] md:w-[200px] w-[133px]"
+            src="./imags/logo.svg"
+            alt="1С-Товары logo"
+          />
         </a>
 
-        <img id="menu-btn" class="md:hidden w-8 cursor-pointer" src="./imags/menu-icon.svg" alt="Menu Icon" />
-    
-        <!-- Navigation links -->
-        <nav id="nav" class="hidden   md:flex items-center gap-12 px-5 py-8 md:relative  md:justify-end fixed  text-center  h-[100vh] w-[100vw]  top-0 left-0 ">
-          <ul class="flex gap-6 md:gap-12 flex-col md:flex-row  ">
-            <button class="text-red-600 ml-auto  md:hidden "  id="close-btn">X </button>
-            <li><a class=" hover:text-green whitespace-nowrap text-sm font-normal" href="/">Как это работает</a></li>
-            <li><a class=" hover:text-green whitespace-nowrap text-sm font-normal" href="/">Инструкции</a></li>
-            <li><a class=" hover:text-green whitespace-nowrap text-sm font-normal" href="/">Продукты</a></li>
-            <li><a class=" hover:text-green whitespace-nowrap text-sm font-normal" href="/">База знаний </a></li>
-            <li><a class=" hover:text-green whitespace-nowrap text-sm font-normal" href="/">О нас</a></li>
+        <img
+          id="menu-btn"
+          class="md:hidden w-8 cursor-pointer"
+          src="./imags/menu-icon.svg"
+          alt="Menu Icon"
+        />
+        <nav
+          id="nav"
+          class="hidden bg-white md:flex items-center gap-12 px-5 py-8 md:relative md:justify-end fixed text-center h-[100vh] w-[97vw] top-0 right-3"
+        >
+          <ul class="flex gap-6 md:gap-12 flex-col md:flex-row">
+            <button class="text-red-600 ml-auto md:hidden" id="close-btn">
+              X
+            </button>
+            <li>
+              <a
+                class="hover:text-green whitespace-nowrap text-sm font-normal"
+                href="/"
+                >Как это работает</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-green whitespace-nowrap text-sm font-normal"
+                href="/"
+                >Инструкции</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-green whitespace-nowrap text-sm font-normal"
+                href="/"
+                >Продукты</a
+              >
+            </li>
+            <li>
+              <a
+                class="hover:text-green whitespace-nowrap text-sm font-normal"
+                href="/"
+                >База знаний
+              </a>
+            </li>
+            <li>
+              <a
+                class="hover:text-green whitespace-nowrap text-sm font-normal"
+                href="/"
+                >О нас</a
+              >
+            </li>
           </ul>
-          <button class="btn-header">Вход</button>
+          <button class="btn-primary">Вход</button>
         </nav>
       </div>
     </header>
-    
+    <main>
+      <!-- Section One -->
+      <section class="bg-white">
+        <div
+          class="pt-5 gap-10 md:py-12 my-container px-5 md:px-3 lg:px-0 flex flex-col md:flex-row md:justify-between items-center"
+        >
+          <div class="flex flex-col md:gap-8 gap-5">
+            <h1 class="title text-4xl md:text-6xl">
+              Управление запасами розничного магазина
+            </h1>
+            <p class="text-lg">
+              Использование сервиса 1С-Товары позволяет значительно упростить
+              работу по формированию заявок поставщику.
+            </p>
+            <button class="btn-primary w-fit bg-green text-white">
+              Заказать демонстрацию
+            </button>
+          </div>
+          <img src="./imags/section-one.png" alt="" />
+        </div>
+      </section>
+      <!-- Section Two -->
+      <section class="bg-bg">
+        <div
+          class="my-container py-8 md:py-16 px-5 md:px-3 lg:px-0 flex flex-wrap justify-between"
+        >
+          <div class="card w-full md:w-[49%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/settings.png" alt="" />
+              <h3 class="title">Управление запасами</h3>
+            </div>
+            <p class="grey-text">
+              Управление запасами Сервис 1С-Товары позволяет рассчитать
+              необходимое количество товаров на полках (уровень запасов),
+              помогает организовать систему контроля за остатками товаров, а
+              также вовремя и в нужном количестве закупать у поставщиков.
+              Подробнее
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[49%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card2.svg" alt="" />
+              <h3 class="title">Автозаказ товаров</h3>
+            </div>
+            <p class="grey-text">
+              Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис
+              работает с равномерным и редким спросом для разных видов товаров.
+              Автоматически подбирает подходящий метод расчета и позволяет
+              внести корректировки в выполняемые расчеты.
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[32%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card3.png" alt="" />
+              <h3 class="title">Анализ магазина</h3>
+            </div>
+            <p class="grey-text">
+              Система контроля упущенных продаж позволяет увеличить выручку.
+              Средний чек, минимальный чек, максимальный чек - это пример
+              показателей, которые анализирует сервис 1С-Товары, а также
+              предлагает ряд инструментов для управления ценой и торговой
+              наценкой.
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[32%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card4.svg" alt="" />
+              <h3 class="title">Прогнозирование спроса</h3>
+            </div>
+            <p class="grey-text">
+              Сервис 1С-Товары позволяет рассчитать прогноз спроса. Сервис
+              работает с равномерным и редким спросом для разных видов товаров.
+              Автоматически подбирает подходящий метод расчета и позволяет
+              внести корректировки в выполняемые расчеты.
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[32%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card5.svg" alt="" />
+              <h3 class="title">Управление поставками</h3>
+            </div>
+            <p class="grey-text">
+              Управление запасами Сервис 1С-Товары позволяет рассчитать
+              необходимое количество товаров на полках (уровень запасов),
+              помогает организовать систему контроля за остатками товаров, а
+              также вовремя и в нужном количестве закупать у поставщиков.
+              Подробнее
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[49%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card6.svg" alt="" />
+              <h3 class="title">Управление ассортиментом</h3>
+            </div>
+            <p class="grey-text">
+              Сервис 1С-Товары позволяет определить ассортиментную матрицу.
+              Быстро и просто принять решение о том какие товары вывести из
+              ассортимента, а наличие каких увеличить на полках магазина. Сервис
+              позволяет узнать необходимую информацию: динамику продаж и
+              остатков, периоды дефицита, размер оптимального остатка.
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+          <div class="card w-full md:w-[49%]">
+            <div class="flex items-center gap-3">
+              <img class="w-14" src="./imags/card7.png" alt="" />
+              <h3 class="title">Управление продажами</h3>
+            </div>
+            <p class="grey-text">
+              Система контроля упущенных продаж позволяет увеличить выручку.
+              Средний чек, минимальный чек, максимальный чек - это пример
+              показателей, которые анализирует сервис 1С-Товары, а также
+              предлагает ряд инструментов для управления ценой и торговой
+              наценкой.
+            </p>
+            <button class="btn-primary">Подробнее</button>
+          </div>
+        </div>
+        <div
+          class="my-container px-5 py-10 md:px-8 rounded-lg md:rounded-[56px] md:h-28 bg-bgGreen gap-5 flex flex-col md:flex-row items-center justify-between"
+        >
+          <div class="flex items-center gap-3 md:gap-35">
+            <img src="./imags/sovga.png" alt="" />
+            <p class="text text-green">
+              Подключи любой продукт на 1 месяц бесплатно и оцени наши
+              приемущества
+            </p>
+          </div>
+          <button class="btn-header">Подключить сейчас</button>
+        </div>
+      </section>
+      <!-- section three -->
+      <section class="my-container py-10 px-5 md:px-3 lg:px-0">
+        <h2 class="title text-3xl">С нами удобнее</h2>
+        <div
+          class="flex flex-col md:flex-row justify-between items-start md:items-stretch"
+        >
+          <div class="card w-full md:w-[49%]">
+            <h3 class="title text-center">Без 1С-Товары</h3>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Лишний товар складируется и не продается
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Лишний товар складируется и не продается
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Лишний товар складируется и не продается
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Постоянно приходится думать какой продукт будет актуален, а
+                какой стоит выводить из ассортимента
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/close.png" alt="" />
+              <p class="default-text">
+                Лишний товар складируется и не продается
+              </p>
+            </div>
+          </div>
+          <div class="card w-full md:w-[49%] bg-bgGreen">
+            <h3 class="title text-center">Без 1С-Товары</h3>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">Организованная система остатков</p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">
+                В магазине есть определенная ассортиментная матрица,
+                поддерживающая актуальный ассортимент
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">Рассчитанный прогноз спроса</p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">Организованная система остатков</p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">
+                В магазине есть определенная ассортиментная матрица,
+                поддерживающая актуальный ассортимент
+              </p>
+            </div>
+            <div class="flex gap-5 items-center">
+              <img src="./imags/true.png" alt="" />
+              <p class="default-text">Рассчитанный прогноз спроса</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section four -->
+      <section class="bg-bgGreen py-10">
+        <div class="my-container px-5 md:px-3 lg:px-0">
+          <div class="flex items-center justify-between">
+            <h2 class="title md:text-3xl">Популярные продукты</h2>
+            <button class="btn-header">Все продукты</button>
+          </div>
+          <div class="flex flex-wrap items-stretch justify-center md:justify-between">
+            <div class="card w-full md:w-[32%]">
+              <div class="flex justify-between items-center gap-3">
+                <h3 class="title">1С-Товары 300</h3>
+                <button class="btn-primary">400 руб/мес</button>
+              </div>
+              <ul class="list-disc flex flex-col gap-5" >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li  >
+                <li class="grey-text" >
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li  >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li>
+                <li class="grey-text">
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li>
 
+              </ul>
+              <button class="btn-primary">Подробнее</button>
+            </div>
+            <div class="card w-full md:w-[32%]">
+              <div class="flex justify-between items-center gap-3">
+                <h3 class="title">1С-Товары 30</h3>
+                <button class="btn-primary">1700 руб/мес</button>
+              </div>
+              <ul class="list-disc flex flex-col gap-5" >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li  >
+                <li class="grey-text" >
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li  >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li>
+                <li class="grey-text">
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li>
 
+              </ul>
+              <button class="btn-primary">Подробнее</button>
+            </div>
+            <div class="card w-full md:w-[32%]">
+              <div class="flex justify-between items-center gap-3">
+                <h3 class="title">1С-Товары </h3>
+                <button class="btn-primary">4 500 руб/мес</button>
+              </div>
+              <ul class="list-disc flex flex-col gap-5" >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li  >
+                <li class="grey-text" >
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li  >
+                <li class="grey-text" >
+                  Прогноз спроса с использованием сервера прогнозирования
+                  (ограничение – 300 товаров)
+                </li>
+                <li class="grey-text">
+                  Рекомендации по управлению ассортиментом (1С-Ритейл Чекер)
+                </li>
 
-
+              </ul>
+              <button class="btn-primary">Подробнее</button>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
 
     <script src="./script.js"></script>
   </body>
